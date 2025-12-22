@@ -6,6 +6,14 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <script src="https://okmpl.kro.kr/jquery.js"></script>
+
+  <link href="https://okmpl.kro.kr/jquery-ui.min.css" rel="stylesheet" type="text/css' />
+  <script src="https://okmpl.kro.kr/jquery-ui.min.js"></script>
+
+	<script type="module>
+		const ui = await import("https://okmpl.kro.kr/_/ui.js");
+		ui.alert();
+	</script>
 </head>
 <body>
   <!-- Use Tailwind classes here -->
@@ -14,5 +22,9 @@
     <p>We're making <strong>UI tools that tools are COOL.</strong></p>
     <p>Need more? Contact <a href="/contact" underline bold>here!</a></p>
   </div>
+
+	<div id="dialog">
+		<p>Not allowd</p>
+	</div>
 </body>
 </html>
