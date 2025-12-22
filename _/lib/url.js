@@ -5,6 +5,13 @@ export function VirtualDomElememt() {
     UID: "",
   };
 };
+
+export function ClassLoadder() {
+  return {
+    UID: ""
+  };
+};
+
 export function CheckJqueryStatus() {
   if (this["$"] || window["$"]) {
     return true;
