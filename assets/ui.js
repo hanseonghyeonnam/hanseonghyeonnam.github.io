@@ -8,7 +8,7 @@ if (!CheckJqueryStatus()) {
   throw Error("");
 }
 
-const mainElememt = ClassLoader("ui");
+const mainElement = ClassLoader("ui");
 
 export default class ui {
   static alert() {
