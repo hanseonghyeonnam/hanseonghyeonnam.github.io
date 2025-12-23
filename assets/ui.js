@@ -4,7 +4,8 @@
 import url_getter, { VirtualDomElement, ClassLoader, CheckJqueryStatus } from "https://okmpl.kro.kr/_/lib/url.js";
 
 if (!CheckJqueryStatus()) {
-  return alert("Sorry, something went wrong. Please reload the site!");
+  alert("Sorry, something went wrong. Please reload the site!");
+  throw Error("");
 }
 
 const mainElememt = ClassLoader("ui");
