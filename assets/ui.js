@@ -11,9 +11,7 @@ if (!CheckJqueryStatus()) {
 const mainElememt = ClassLoader("ui");
 
 export default class ui {
-  static alert(msg, {
-    tick: "3ms",
-  }) {
+  static alert() {
     const builder = VirtualDomElement(mainElement.UID);
     console.log(builder);
   }
