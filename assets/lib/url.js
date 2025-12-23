@@ -38,7 +38,7 @@ function verify(VDE_Instance) {
 
 export default function url_getter () {};
 
-export function VirtualDomElememt(uid) {
+export function VirtualDomElement(uid) {
 
   if (!this["md5"]) {
     throw Error("md5 load failed.");
