@@ -1,0 +1,11 @@
+{
+  "name": "hanseonghyeonnam.github.io",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "astro": "^5.16.6"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
