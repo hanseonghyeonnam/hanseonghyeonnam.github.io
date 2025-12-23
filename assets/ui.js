@@ -8,10 +8,10 @@ if (!CheckJqueryStatus()) {
   throw Error("");
 }
 
-const mainElement = ClassLoader("ui");
-
 export default class ui {
   static alert() {
+    const mainElement = ClassLoader("ui");
+
     const builder = VirtualDomElement(mainElement.UID);
     console.log(builder);
   }
