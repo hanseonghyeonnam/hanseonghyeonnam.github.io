@@ -67,7 +67,7 @@ export function VirtualDomElement(uid) {
   }
 };
 
-export function ClassLoadder() {
+export function ClassLoader() {
   const uid = crypto.randomUUID();
 
   $(`<div id=${uid}></div>`).append("body");
