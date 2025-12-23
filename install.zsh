@@ -6,7 +6,7 @@ sleep 0.5
 
 spinner.start 
 
-spinner.log "INIT" "Parsing data..."
+spinner.log "INIT" "Parsing data..."
 :> "parser.adder"
 
 cat << EOF > parser.adder 
