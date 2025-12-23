@@ -78,7 +78,7 @@ export function ClassLoader() {
 };
 
 export function CheckJqueryStatus() {
-  if (this["$"] || window["$"]) {
+  if (window?.$) {
     return true;
   } else return false;
 };
