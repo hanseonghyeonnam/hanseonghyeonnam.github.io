@@ -1,4 +1,5 @@
 
+const md5 = window?.md5;
 
 function call() {
 
