@@ -14,5 +14,6 @@ const allUsers = await db.select().from(users);
 		<p>Welcome.</p>
 		<ul>
 			{allUsers.map(u => <li>{u.txt}</li>)}
+		</ul>
 	</div>
 </Layout>
