@@ -2,6 +2,8 @@ import { defineConfig } from "astro/config";
 import tsconfigPaths from "vite-tsconfig-paths";
 import { fileURLToPath, URL } from "node:url";
 
+import db from "@astrojs/db";
+
 export default defineConfig({
   vite: {
     plugins: [tsconfigPaths()],
@@ -11,4 +13,6 @@ export default defineConfig({
       },
     },
   },
+
+  integrations: [db()],
 });
