@@ -15,6 +15,7 @@ export default defineConfig({
         // i'll re-use the ones in the official docs:
         "@components": path.resolve(path.dirname(''), './src/components'),
         "@assets": path.resolve(path.dirname(''), './src/assets'),
+        "@layouts": path.resolve(path.dirname(''), './src/layouts'),
         "@": path.resolve(path.dirname(''), './src/')
       }
     }
