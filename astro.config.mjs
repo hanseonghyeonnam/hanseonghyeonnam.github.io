@@ -4,15 +4,19 @@ import { fileURLToPath, URL } from "node:url";
 
 import db from "@astrojs/db";
 
+import { path } from 'path'
+
 export default defineConfig({
   vite: {
-    plugins: [tsconfigPaths()],
     resolve: {
       alias: {
-        "@": fileURLToPath(new URL("./src", import.meta.url)),
-      },
-    },
+        // your aliases should mirror the ones defined in your tsconfig.json
+        // i'll re-use the ones in the official docs:
+        "@components": path.resolve(path.dirname(''), './src/components'),
+        "@assets": path.resolve(path.dirname(''), './src/assets'),
+        "@": path.resolve(path.dirname(''), './src/')
+      }
+    }
   },
-
   integrations: [db()],
-});
+})
