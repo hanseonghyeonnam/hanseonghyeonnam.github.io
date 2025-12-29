@@ -2,9 +2,10 @@ import { defineConfig } from "astro/config";
 import tsconfigPaths from "vite-tsconfig-paths";
 import { fileURLToPath, URL } from "node:url";
 
+import path from "path";
 import db from "@astrojs/db";
 
-import { path } from 'path'
+
 
 export default defineConfig({
   vite: {
