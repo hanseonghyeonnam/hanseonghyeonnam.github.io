@@ -1,14 +1,14 @@
-// @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 import tsconfigPaths from "vite-tsconfig-paths";
-import db from '@astrojs/db';
+import { fileURLToPath, URL } from "node:url";
 
-// https://astro.build/config
 export default defineConfig({
-  integrations: [db()],
   vite: {
-    plugins: [
-      tsconfigPaths()
-    ]
-  }
+    plugins: [tsconfigPaths()],
+    resolve: {
+      alias: {
+        "@": fileURLToPath(new URL("./src", import.meta.url)),
+      },
+    },
+  },
 });
