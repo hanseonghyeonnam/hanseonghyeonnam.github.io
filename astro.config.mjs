@@ -3,9 +3,6 @@ import tsconfigPaths from "vite-tsconfig-paths";
 import { fileURLToPath, URL } from "node:url";
 import vercel from "@astrojs/vercel";
 import path from "path";
-import db from "@astrojs/db";
-
-
 
 export default defineConfig({
   vite: {
@@ -20,7 +17,6 @@ export default defineConfig({
       }
     }
   },
-  integrations: [db()],
 
   output: "server",
   adapter: vercel(),

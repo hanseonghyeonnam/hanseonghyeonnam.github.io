@@ -10,7 +10,6 @@
     "typescript": "^5"
   },
   "dependencies": {
-    "@astrojs/db": "^0.18.3",
     "@heroui/react": "^2.8.7",
     "@supabase/supabase-js": "^2.89.0",
     "framer-motion": "^12.23.26",
