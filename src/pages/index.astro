@@ -1,17 +1,20 @@
 ---
+import Layout from '@layouts/Layout.astro';
 import { supabase } from '@/lib/supabase';
 
-const { data: users, error } = await supabase
-  .from('users')
-  .select('id, text, body');
+const { data: messages, error } = await supabase
+  .from('messages')
+  .select('id, title, subtitle');
 
-if (error) {
-  console.error(error);
-}
+if (error) console.error(error);
 ---
-
 <Layout>
   <ul>
-    {users?.map(u => <li>{u.text}</li>)}
+    {messages?.map(m => (
+      <li>
+        <b>{m.title}</b>
+        <p>{m.subtitle}</p>
+      </li>
+    ))}
   </ul>
 </Layout>
