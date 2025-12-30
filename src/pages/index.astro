@@ -4,9 +4,10 @@ import { supabase } from '@/lib/supabase';
 
 const { data: messages, error } = await supabase
   .from('messages')
-  .select('id, title, subtitle');
-
+  .select('id, title, subtitle')
+  .range(0, 0);
 if (error) console.error(error);
+console.log(messages);
 ---
 <Layout>
   <ul>
