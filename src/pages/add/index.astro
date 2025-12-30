@@ -1,5 +1,17 @@
 ---
 import Layout from '@layouts/Layout.astro';
+import { supabase } from '@/lib/supabase';
+
+const { d, e } = await supabase.from("messages").insert([
+	{
+		2,
+		"Welcome",
+		"HI!"
+	}
+]);
+
+if (e) throw e;
+console.log(d);
 ---
 
 <Layout>
