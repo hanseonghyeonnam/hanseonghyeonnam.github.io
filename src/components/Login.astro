@@ -1,0 +1,18 @@
+---
+const { supabase } = await import('@/lib/supabase');
+---
+
+<main class="flex flex-col justify-center items-center min-h-screen">
+  <button id="login-btn">Login with GitHub</button>
+</main>
+
+<script type="module" client:load>
+  import { supabase } from '/src/lib/supabase.js';
+
+  const btn = document.getElementById("login-btn");
+  btn.addEventListener("click", async () => {
+    await supabase.auth.signInWithOAuth({ provider: "github" });
+  });
+</script>
+
+

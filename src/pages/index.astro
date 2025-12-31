@@ -7,8 +7,13 @@ const { data: messages, error } = await supabase
   .select('id, title, subtitle')
   .range(0, 0);
 if (error) console.error(error);
-console.log(messages);
+// console.log(messages);
+
+import '@fontsource/outfit/300.css';
+import '@fontsource/outfit/400.css';
+import '@fontsource/outfit/700.css';
 ---
+
 <Layout>
   <ul>
     {messages?.map(m => (

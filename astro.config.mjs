@@ -4,6 +4,9 @@ import { fileURLToPath, URL } from "node:url";
 import vercel from "@astrojs/vercel";
 import path from "path";
 
+import tailwindcss from "@tailwindcss/vite";
+import tailwind from "@astrojs/tailwind";
+
 export default defineConfig({
   vite: {
     resolve: {
@@ -15,10 +18,15 @@ export default defineConfig({
         "@layouts": path.resolve(path.dirname(''), './src/layouts'),
         "@": path.resolve(path.dirname(''), './src/')
       }
-    }
+    },
+
+    plugins: [tailwindcss()],
   },
 
   output: "server",
   adapter: vercel(),
 
+  integrations: [
+    tailwind()
+  ]
 })

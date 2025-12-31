@@ -1,20 +1,20 @@
 ---
 import Layout from '@layouts/Layout.astro';
-import Alert from '@components/Alert.jsx';
+import Login from '@components/Login.astro';
 import { supabase } from '@/lib/supabase';
 
 let errorCode: string | null = null;
 
-const { error } = await supabase
+/*const { error } = await supabase
   .from("messages")
   .insert({ title: "Welcome", subtitle: "HI!" });
 
 if (error) {
   errorCode = error.code;
-}
+}*/
 ---
 
 
 <Layout>
-	<p>HIII!!!!</p>
+	<Login client:load />
 </Layout>
