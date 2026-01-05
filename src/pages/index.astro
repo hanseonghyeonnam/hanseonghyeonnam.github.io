@@ -1,5 +1,6 @@
 ---
 import Layout from '@layouts/Layout.astro';
+import '@layouts/Font.astro';
 import { supabase } from '@/lib/supabase';
 
 const { data: messages, error } = await supabase
@@ -9,9 +10,7 @@ const { data: messages, error } = await supabase
 if (error) console.error(error);
 // console.log(messages);
 
-import '@fontsource/outfit/300.css';
-import '@fontsource/outfit/400.css';
-import '@fontsource/outfit/700.css';
+
 ---
 
 <Layout>
