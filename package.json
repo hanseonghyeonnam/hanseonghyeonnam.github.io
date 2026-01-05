@@ -4,9 +4,11 @@
   "devDependencies": {
     "@astrojs/vercel": "^9.0.2",
     "@tailwindcss/postcss": "^4.1.18",
+    "@tailwindcss/typography": "^0.5.19",
     "@types/bun": "latest",
     "astro": "^5.16.6",
     "autoprefixer": "^10.4.23",
+    "daisyui": "^5.5.14",
     "postcss": "^8.5.6"
   },
   "peerDependencies": {

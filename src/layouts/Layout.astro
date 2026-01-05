@@ -8,22 +8,14 @@ import '@fontsource/outfit/700.css';
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>okmpl</title>
-	</head>
-	<body>
-		<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-		<div class="prose-a:text-blue-800 prose-blockquote:text-gray-500 prose-blockquote:border-l prose-blockquote:border-l-4 prose-blockquote:border-emerald-500 prose-blockquote:font-light">
-			<article class="prose-lg lg:prose-xl">
-				<wrapper>
-            		<slot/>
-            	</wrapper>
-            </article>
-		</div>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>okmpl</title>
+  </head>
+  <body class="bg-neutral-900 text-neutral-100">
+    <article class="prose prose-lg lg:prose-xl">
+      <slot />
+    </article>
+  </body>
 </html>
