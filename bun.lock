@@ -5,7 +5,7 @@
     "": {
       "name": "hanseonghyeonnam.github.io",
       "dependencies": {
-        "@fontsource/outfit": "^5.2.8",
+        "@fontsource-variable/outfit": "^5.2.8",
         "@fontsource/poppins": "^5.2.7",
         "@heroui/react": "^2.8.7",
         "@supabase/supabase-js": "^2.89.0",
@@ -22,7 +22,6 @@
         "astro": "^5.16.6",
         "autoprefixer": "^10.4.23",
         "daisyui": "^5.5.14",
-        "postcss": "^8.5.6",
       },
       "peerDependencies": {
         "typescript": "^5",
@@ -110,7 +109,7 @@
 
     "@esbuild/win32-x64": ["@esbuild/win32-x64@0.25.12", "", { "os": "win32", "cpu": "x64" }, "sha512-alJC0uCZpTFrSL0CCDjcgleBXPnCrEAhTBILpeAp7M/OFgoqtAetfBzX0xM00MUsVVPpVjlPuMbREqnZCXaTnA=="],
 
-    "@fontsource/outfit": ["@fontsource/outfit@5.2.8", "", {}, "sha512-rXC6g0MqD7cOBjht0bMqc43qM6lRqDLML9KXsmg9uykz0wLQhy8Z/ajrMG6iyoT3NJR+MYgU+OEHp7uHoTb+Yw=="],
+    "@fontsource-variable/outfit": ["@fontsource-variable/outfit@5.2.8", "", {}, "sha512-4oUDCZx/Tcz6HZP423w/niqEH31Gks5IsqHV2ZZz1qKHaVIZdj2f0/S1IK2n8jl6Xo0o3N+3RjNHlV9R73ozQA=="],
 
     "@fontsource/poppins": ["@fontsource/poppins@5.2.7", "", {}, "sha512-6uQyPmseo4FgI97WIhA4yWRlNaoLk4vSDK/PyRwdqqZb5zAEuc+Kunt8JTMcsHYUEGYBtN15SNkMajMdqUSUmg=="],
 

@@ -8,14 +8,13 @@
     "@types/bun": "latest",
     "astro": "^5.16.6",
     "autoprefixer": "^10.4.23",
-    "daisyui": "^5.5.14",
-    "postcss": "^8.5.6"
+    "daisyui": "^5.5.14"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
   "dependencies": {
-    "@fontsource/outfit": "^5.2.8",
+    "@fontsource-variable/outfit": "^5.2.8",
     "@fontsource/poppins": "^5.2.7",
     "@heroui/react": "^2.8.7",
     "@supabase/supabase-js": "^2.89.0",
