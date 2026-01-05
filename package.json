@@ -3,6 +3,7 @@
   "private": true,
   "devDependencies": {
     "@astrojs/vercel": "^9.0.2",
+    "@tailwindcss/postcss": "^4.1.18",
     "@types/bun": "latest",
     "astro": "^5.16.6"
   },
